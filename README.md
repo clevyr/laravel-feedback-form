@@ -39,7 +39,7 @@ Include this Vue directive anywhere in your blade/vue templates:
 
 You can conditionally show the form in blade templates like this:
 ```
-@if config('feedback.enabled')
+@if (config('feedback.enabled'))
   <feedback-form />
 @endif
 ```
