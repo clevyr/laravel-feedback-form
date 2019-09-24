@@ -43,13 +43,14 @@ class Feedback extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('You have received feedback from:')
-                    ->line('')
-                    ->line('Name: ' . $this->data['name'])
-                    ->line('Email: ' . $this->data['email'])
-                    ->line('')
-                    ->line('Comment:')
-                    ->line($this->data['body']);
+          ->from($this->data['email'])
+          ->line('You have received feedback from:')
+          ->line('')
+          ->line('Name: ' . $this->data['name'])
+          ->line('Email: ' . $this->data['email'])
+          ->line('')
+          ->line('Comment:')
+          ->line($this->data['body']);
     }
 
     /**
