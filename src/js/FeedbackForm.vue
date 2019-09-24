@@ -84,7 +84,8 @@
 
 <style lang="scss">
 .feedback-form {
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     bottom: 1em;
     right: 1em;
 
