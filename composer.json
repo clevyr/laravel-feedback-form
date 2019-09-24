@@ -1,0 +1,42 @@
+{
+  "name": "clevyr/laravel-feedback-form",
+  "type": "library",
+  "description": "A simple user feedback form for Laravel.",
+  "keywords": [
+    "laravel",
+    "laravel5",
+    "form",
+    "feedback",
+    "email"
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "laravel/framework": ">=5.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "homepage": "https://clevyr.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aaron Krauss",
+      "email": "aaron@clevyr.com",
+      "homepage": "https://clevyr.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Clevyr\\FeedbackForm\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Clevyr\\FeedbackForm\\FeedbackServiceProvider"
+      ]
+    }
+  }
+}
