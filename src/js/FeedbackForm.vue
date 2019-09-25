@@ -216,8 +216,8 @@ export default {
                 this.isLoading = true,
 
                 await axios.post(`/feedback`, {
-                    name: this.name,
-                    email: this.email,
+                    name: this.nameField,
+                    email: this.emailField,
                     body: this.body,
                 });
 
